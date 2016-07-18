@@ -47,7 +47,7 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7' class='srclink' href='../src/imghdr/src/lib.rs.html#7-26' title='goto source code'>[src]</a></span></h1>
+               </span><a id='src-27' class='srclink' href='../src/imghdr/src/lib.rs.html#7-28' title='goto source code'>[src]</a></span></h1>
 <pre class='rust enum'>pub enum Type {
     Gif,
     Tiff,
@@ -58,23 +58,25 @@
     Png,
     Webp,
     Exr,
+    Bgp,
 }</pre><div class='docblock'><p>Recognized image types</p>
 </div><h2 class='variants'>Variants</h2>
-<table class='variants_table'><tr><td id='variant.Gif'><code>Gif</code></td><td><div class='docblock'><p>Gif 87a and 89a Files</p>
-</div></td><td></td></tr><tr><td id='variant.Tiff'><code>Tiff</code></td><td><div class='docblock'><p>TIFF files</p>
-</div></td><td></td></tr><tr><td id='variant.Rast'><code>Rast</code></td><td><div class='docblock'><p>Sun Raster files</p>
-</div></td><td></td></tr><tr><td id='variant.Xbm'><code>Xbm</code></td><td><div class='docblock'><p>X Bitmap files</p>
-</div></td><td></td></tr><tr><td id='variant.Jpeg'><code>Jpeg</code></td><td><div class='docblock'><p>JPEG data in JFIF or Exif formats</p>
-</div></td><td></td></tr><tr><td id='variant.Bmp'><code>Bmp</code></td><td><div class='docblock'><p>BMP files</p>
-</div></td><td></td></tr><tr><td id='variant.Png'><code>Png</code></td><td><div class='docblock'><p>Portable Network Graphics</p>
-</div></td><td></td></tr><tr><td id='variant.Webp'><code>Webp</code></td><td><div class='docblock'><p>WebP files</p>
-</div></td><td></td></tr><tr><td id='variant.Exr'><code>Exr</code></td><td><div class='docblock'><p>OpenEXR files</p>
-</div></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../imghdr/enum.Type.html' title='imghdr::Type'>Type</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-17' class='srclink' href='../src/imghdr/src/lib.rs.html#6' title='goto source code'>[src]</a></span></h3>
+<span id='variant.Gif' class='variant'><code>Gif</code></span><div class='docblock'><p>Gif 87a and 89a Files</p>
+</div><span id='variant.Tiff' class='variant'><code>Tiff</code></span><div class='docblock'><p>TIFF files</p>
+</div><span id='variant.Rast' class='variant'><code>Rast</code></span><div class='docblock'><p>Sun Raster files</p>
+</div><span id='variant.Xbm' class='variant'><code>Xbm</code></span><div class='docblock'><p>X Bitmap files</p>
+</div><span id='variant.Jpeg' class='variant'><code>Jpeg</code></span><div class='docblock'><p>JPEG data in JFIF or Exif formats</p>
+</div><span id='variant.Bmp' class='variant'><code>Bmp</code></span><div class='docblock'><p>BMP files</p>
+</div><span id='variant.Png' class='variant'><code>Png</code></span><div class='docblock'><p>Portable Network Graphics</p>
+</div><span id='variant.Webp' class='variant'><code>Webp</code></span><div class='docblock'><p>WebP files</p>
+</div><span id='variant.Exr' class='variant'><code>Exr</code></span><div class='docblock'><p>OpenEXR files</p>
+</div><span id='variant.Bgp' class='variant'><code>Bgp</code></span><div class='docblock'><p>BGP (Better Portable Graphics) files</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../imghdr/enum.Type.html' title='imghdr::Type'>Type</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7' class='srclink' href='../src/imghdr/src/lib.rs.html#6' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../imghdr/enum.Type.html' title='imghdr::Type'>Type</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
 <div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
 </div><h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
 <div class='docblock'><p>This method tests for <code>!=</code>.</p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../imghdr/enum.Type.html' title='imghdr::Type'>Type</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-23' class='srclink' href='../src/imghdr/src/lib.rs.html#6' title='goto source code'>[src]</a></span></h3>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../imghdr/enum.Type.html' title='imghdr::Type'>Type</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13' class='srclink' href='../src/imghdr/src/lib.rs.html#6' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
 <div class='docblock'><p>Formats the value using the given formatter.</p>
 </div></div></section>
