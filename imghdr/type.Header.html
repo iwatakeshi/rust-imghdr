@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="API documentation for the Rust `open` fn in crate `imghdr`.">
-    <meta name="keywords" content="rust, rustlang, rust-lang, open">
+    <meta name="description" content="API documentation for the Rust `Header` type in crate `imghdr`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Header">
 
-    <title>imghdr::open - Rust</title>
+    <title>imghdr::Header - Rust</title>
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
@@ -28,7 +28,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='index.html'>imghdr</a></p><script>window.sidebarCurrent = {name: 'open', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'><a href='index.html'>imghdr</a></p><script>window.sidebarCurrent = {name: 'Header', ty: 'type', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,24 +42,13 @@
         </form>
     </nav>
 
-    <section id='main' class="content fn">
-<h1 class='fqn'><span class='in-band'>Function <a href='index.html'>imghdr</a>::<wbr><a class='fn' href=''>open</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content type">
+<h1 class='fqn'><span class='in-band'><a href='index.html'>imghdr</a>::<wbr><a class='type' href=''>Header</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-76' class='srclink' href='../src/imghdr/src/lib.rs.html#74-83' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn open&lt;T:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/std/path/struct.Path.html' title='std::path::Path'>Path</a>&gt;&gt;(path: T) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='enum' href='../imghdr/enum.Type.html' title='imghdr::Type'>Type</a>,&nbsp;<a class='struct' href='https://doc.rust-lang.org/nightly/std/io/error/struct.Error.html' title='std::io::error::Error'>Error</a>&gt;</pre><div class='docblock'><p>Open file and test if it an image.</p>
-
-<h1 id='errors' class='section-header'><a href='#errors'>Errors</a></h1>
-<p>This function will return an <code>std::io::Error</code> if file is inaccessible or can&#39;t be read.</p>
-
-<p>Also it will return an <code>std::io::Error</code> with a <code>std::io::ErrorKind::InvalidData</code> kind
-if file is not an image.</p>
-
-<h1 id='examples' class='section-header'><a href='#examples'>Examples</a></h1>
-<pre class='rust rust-example-rendered'>
-<span class='ident'>imghdr</span>.<span class='ident'>open</span>(<span class='string'>&quot;/path/to/image.jpg&quot;</span>).<span class='ident'>unwrap</span>();</pre>
-</div></section>
+               </span><a id='src-15' class='srclink' href='../src/imghdr/src/lib.rs.html#7' title='goto source code'>[src]</a></span></h1>
+<pre class='rust typedef'>type Header = <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.array.html'>; 32]</a>;</pre></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
